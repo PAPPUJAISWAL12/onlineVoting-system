@@ -1,0 +1,616 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+
+.header {
+    background: linear-gradient(to left,#ffd800,#f5b024);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-clip: border-box;
+    background-size: auto;
+}
+
+.menu a {
+    color:white;
+    
+    transition: 0.3s;
+    position: relative;
+    font-size: 16px;
+    }
+
+    .menu a:before {
+        
+        position: absolute;
+        left: 16px;
+        bottom: 12px;
+        width: 0;
+        height: 1px;
+        background:hsl(180, 5%, 92%);
+        transition: 0.3s;
+    }
+
+    .menu a:hover {
+        background: transparent;
+        color: black;
+        
+    }
+    .menu:hover a:focus{
+        left: 0;
+        background:none;
+    }
+    .menu a:focus{
+        left: -7rem;
+        background:#b9abab !important;
+    }
+    
+    .menu a:hover:visited:active{
+        left: -7rem;
+        color: #f1ece5;
+    }
+    .menu a:active{
+        color: #b9abab;
+    }   
+    .active{
+        color: #d8d2d2;
+    }
+
+.menu .active a {
+    color: #f4faf6;
+}
+
+   
+.li{
+    display:inline;
+}
+
+  /* define to slide caption  animation*/
+  .carousel-caption{
+    position: absolute;
+    top:0;
+    display:-webkit-box;
+    display:-moz-box;
+    display: -ms-flexbox;
+    display:flex;
+    -webkit-box-align: center;
+    -moz-box-align:center;
+    -ms-flex-align:center;
+    -webkit-align-items: center;
+    align-items: center;
+    left: 100%;
+    padding: 149px;
+}
+
+ 
+  
+
+
+.bold{
+    background-repeat:no-repeat;
+    -webkit-animation-duration:5s;
+    animation-duration:5s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+    animation-name:fadeinup;
+    -webkit-animation-name:fadeinup;
+}
+
+@keyframes fadeinup{
+    0%{
+        opacity:0;
+        -webkit-transform:translateY(-6000px);
+
+    }
+    60%{
+        opacity:1;
+        -webkit-transform:translateY(30px);
+    }
+    80%{
+        -webkit-transform:translateY(-10px);
+    }
+
+}   
+   .slide{
+       margin-top:40px;
+   } /* close bold define to slide caption  animation*/
+
+.footers /* footer */ {
+    background: linear-gradient(to left,#ffd800,#f5b024);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 200px;
+}
+ @media screen and (max-width:700px){
+     footer{
+         position:static;
+
+     }
+     header{
+         padding-top:20px;
+     }
+ }
+.circle{
+    border-radius: 60%;
+    margin:16px;
+    font-size:20px;
+    background:white;
+}
+
+
+
+.down{
+    margin-top: 80px;
+    background-color: white;
+}
+
+
+.background-transprant-registration{        
+        background:rgb(0, 0, 0);
+        background:rgba(0, 0, 0, 0.4);
+        position: static;
+        height: 680px;
+        
+    
+    }
+
+.submit{
+    margin-top: 40px;
+    align-content:center;
+    padding:0px 40px;
+}
+
+.log-body{
+    background-color:#f28b0d;
+    padding:0px;
+    margin:0px;
+    height:900px;
+    
+}
+.login-pic {
+    
+   margin-top:0px;
+}
+ .login-pic .card {
+        box-shadow: 0px 0 6px 0 rgba(0,0,0,0.4), 0 8px 20px 0 rgba(0,0,0,0.4);
+ }
+.sign-up {
+    background-image: url('../image/b.jpg');
+    width:100%;
+    background-position:top;    
+    height:160px;
+    background-size:cover;
+   background-origin:initial;
+}
+
+.sign-up i{
+    
+   margin-left:210px;
+   
+}
+.needpage {
+    margin-top: 20px;
+    margin-left: 150px;
+}
+.btn-log{
+   padding:5px;
+   margin-left:100px;
+   width:300px;
+}
+@media screen and (max-width:1000px) {
+  .btn-log{
+          padding:10px;
+          margin-left:90px;
+          width:100px;
+   
+  }
+  .needpage{
+      margin-left:40px
+  }
+   .sign-up i{
+       margin-left:90px;
+   }
+  
+}
+
+.sign-up h1 {
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+.log-in{
+  
+    padding:3px;
+    margin:2px;
+}
+.log-in .card{
+ height:400px;
+    box-shadow:0 2px 0 0 rgba(0 ,0 ,0 ,0.4), 2px 0 10px 0 rgba(0 ,0 ,0 ,0.5);
+}
+.down1{
+    margin-top: 60px;
+}
+/*.background-transprant-login{
+        
+    background:rgb(0, 0, 0);
+    background:rgba(0, 0, 0, 0.5);
+    position: static;
+    height:500px;
+}*/
+.box-shadow1{ /* login page*/
+  border: 0px solid;
+  padding:10px;
+  box-shadow:5px 5px #d8d2d2;
+}
+.color1{
+ color:white;
+}
+p h{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.services{
+    padding:0px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-decoration:initial;
+
+}
+/* service */
+.btn-service{
+    background-image:linear-gradient(to right,#e06704,#e76841);
+    height: 50px;
+    width: 300px;
+    color: #f1f1f1;
+    box-shadow: 5px 4px #e6ceb4;
+    
+}
+.btn-service:hover{
+    box-shadow:7px 7px #b9abab;
+    color: #b9abab;
+}
+/* service button inquire */
+.text-uppercase{
+    color: #f1f1f1;
+}
+.navbar-toggler{
+    border-color: white;
+}
+.navbar-toggler .fa-bars{
+    margin-top: 5px;
+    
+}
+
+
+/* services page */
+.services-trans {
+    background-image: url('../image/default-internet-service-providers-9.jpg');
+    height: 330px;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+}
+.services-trans .services-tr{
+    
+    background:rgba(0, 0, 0, 0.5);
+   height:100%;
+    color: #f1f1f1;
+
+    padding:130px;
+}
+.slide .services-tr {
+    background: rgba(0, 0, 0, 0.5);
+    height: 400px;
+    width:100%;
+    color: #f1f1f1;
+    padding: 130px;
+ margin-left:0px;
+}
+ 
+@media screen and (max-width:700px){
+    .services-trans{
+        position:static;
+        display: block;
+        height: 330px;
+    }
+    .bold{
+        font-size:large;
+    }
+   
+}
+.btn-submit{
+  height: 50px;
+  width: initial;
+}
+.btn-submit:hover{
+    box-shadow: 2px 2px #b9abab;
+}
+.btn-shadow{
+    border: 0px solid;
+  padding:10px;
+  box-shadow:5px 5px rgba(0, 0, 0, 0);
+}
+.slide-transparent{
+    background:rgba(0, 0, 0, 0.5);
+}
+/* register page */
+.registration-h3 {
+    text-align: center;
+    margin-top: 30px;
+    padding: 0px, 0px;
+}
+.reg-body {
+    background-color: #fba731;
+    padding: 0px;
+    margin: 0px;
+    height: 680px;
+}
+.color {
+    color:wheat;
+}
+.registration-image {
+    margin-top:2px;  
+    margin-left:2px;
+    background-image: url('../image/b.jpg');
+    width: 99.5%;
+    background-position: top;
+    height: 160px;
+    background-size: cover;
+    background-origin: initial;
+}
+.registration-image h3{
+    text-align:center;
+}
+.reg{
+margin-top:20px;
+}
+.reg .form-group{
+    padding:20px;
+}
+.registered{
+ background-color:#d8d2d2;
+ width:auto;
+
+ margin-bottom: 20px;
+}
+.registered .card{
+    box-shadow: 0 0 4px 0 rgba(0 ,0 ,0 ,0.5), 2px 4px 20px 0 rgba(0 ,0 ,0 ,0.5);
+    cursor:pointer;
+}
+
+.intro{
+    font: outline;
+    margin: 3px;
+    padding:10px;
+    cursor: pointer;
+}
+.btn-service .nav-link{
+    color: white;
+    cursor: pointer;
+}
+
+/*use margin top in index and services page  */
+.margin-top{
+    margin-top: 20px;
+}
+.intro .card:hover{
+  color: #e76006;
+}
+.sidebar{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left: 0;
+    background:#141414;
+    overflow: auto;
+    
+}
+.sidebar a{
+    display: block;
+    color: white;
+    padding:16px;
+    text-decoration: none;
+}
+.sidebar a:hover{
+    background-color: #e48a16;
+    color: #e2ded8;
+    
+}
+div.content{
+    margin-left: 200px;
+    padding:16px;
+    height:initial;
+}
+@media screen and (max-width:700px){
+    .sidebar{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    div.sidebar a{
+        float: left;
+
+    }
+    div.content{
+        margin-left: 0;
+    }   
+}
+@media screen and (max-width:400px){
+    .sidebar a{
+        text-align: center;
+        
+    }
+    
+}
+.btn-a{
+    border-color:white;
+    box-shadow:none;
+    background:rgba(0 ,0 ,0 ,0.5);
+}
+.center-block {
+    padding:20px;
+}
+.nav-link{
+    color:white;
+}
+.vote-color{
+    margin-top:200px;
+}
+
+
+.btn-registration{
+    height:auto;
+    width:150px;
+
+    
+}
+.btn-logpage{
+    border-radius:15%;
+    border-color: white; 
+    border-bottom-color:white;
+    margin-top:6px;
+    background:rgba(0 ,0 ,0 ,0.5);}
+.btn-a  {
+    border-radius: 15%;
+    margin: 6px;
+    font-size: 20px;
+    
+}
+.btn-vote {
+    background-image: url('../image/300px-Flag_of_CPN_(UML).svg.png');
+    width: 230px;
+    background-position:center;
+    height: 100px;
+    background-size: cover;
+    background-origin: initial;
+}
+.btn-vote2 {
+    background-image: url('../image/download.png');
+    width: 230px;
+    background-position:center;
+    height: 100px;
+    background-size: cover;
+   
+
+}
+.btn-vote1 {
+    background-image: url('../image/kangresh.jpg');
+    background-size: cover;
+    background-origin: initial;
+    width: 230px;
+    height: 100px;
+    background-position: top;
+}
+    .btn-vote1 .btn-kangresh {
+        background: rgba(0,0,0,0.4);
+        width: 230px;
+        height: 100px;
+        color:white;
+        font-size:large;
+    }
+.btn-vote .btn-am {
+    background: rgba(0,0,0,0.4);
+    width: 230px;
+    height: 100px;
+    color: white;
+    font-size: large;
+}
+.btn-vote2 .btn-am {
+    background: rgba(0,0,0,0.4);
+    width: 230px;
+    height: 100px;
+    color: white;
+    font-size: large;
+}
+.vote{
+    margin-top:20px;
+}
+.vote .card{
+    box-shadow:0 0 4px 0 rgba(0 ,0 ,0 ,0.5),0 4px 20px 0 rgba(0 ,0 ,0 ,0.5);
+}
+.vote-3 {
+    background-image: url('../image/samajbadi-forum-nepal.jpg');
+    background-size: cover;
+    background-origin: initial;
+    width: 230px;
+    height: 100px;
+    background-position: center;
+}
+.vote-3 .btn-f {
+        background: rgba(0,0,0,0.4);
+        width: 230px;
+        height: 100px;
+        color: white;
+        font-size: large;
+}
+/* 
+    =============================
+    take next level page of index
+    =============================
+*/
+.test {
+    background-image: url('../image/images (3).jpg');
+    background-size:cover;
+    height:300px;
+    background-position:center;
+}
+.test .nextpage{
+    background:rgba(0 ,0 ,0 ,0.5);
+    height:300px;
+}
+.nextlbl{
+    margin-top: 20px;
+    margin:40px;
+    color:white;
+    text-align:center;
+    padding:50px;
+}
+@media only screen and (max-width:1400px){
+    .btnmoreinfo {
+        margin-top: 0px;
+        padding: 30px;
+    }
+
+    .moreinfo {
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 40%;
+        height: 50px;
+        color: white;
+        border-bottom-color: white;
+        border-color: white;
+        width: 200px;
+    }
+}
+.moreinfo:hover{
+    border-bottom-color:coral;
+       border-color:coral;
+    color:coral;
+}
+
+@media only screen and (max-width:400px){
+   .btnmoreinfo{
+       margin:0px;
+   }
+}
+/*
+    ============================
+    End next level page of index
+    ============================
+*/
+.ElectionDetails{
+    margin-top:150px;
+}
+.txtcandidate {
+    margin:100px auto;
+
+}
+.wrapper {
+    width:437px;
+    margin:auto;
+
+}
